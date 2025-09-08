@@ -1,22 +1,34 @@
-const texts = ["Graphic Designer", "Photographer", "Creative Thinker"];
-let count = 0;
+const text = ["Graphic Designer", "Photographer", "Creative Thinker"];
 let index = 0;
+let charIndex = 0;
 let currentText = "";
-let letter = "";
+let isDeleting = false;
+const typingElement = document.querySelector(".typing");
 
-(function type() {
-  if (count === texts.length) {
-    count = 0;
-  }
-  currentText = texts[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing").textContent = letter;
-  if (letter.length === currentText.length) {
-    count++;
+function type() {
+  if (index >= text.length) {
     index = 0;
-    setTimeout(type, 1500);
-  } else {
-    setTimeout(type, 100);
   }
-})();
+  currentText = text[index];
+
+  if (isDeleting) {
+    typingElement.textContent = currentText.substring(0, charIndex--);
+    if (charIndex < 0) {
+      isDeleting = false;
+      index++;
+      setTimeout(type, 500);
+    } else {
+      setTimeout(type, 100);
+    }
+  } else {
+    typingElement.textContent = currentText.substring(0, charIndex++);
+    if (charIndex > currentText.length) {
+      isDeleting = true;
+      setTimeout(type, 1500);
+    } else {
+      setTimeout(type, 150);
+    }
+  }
+}
+
+type();
