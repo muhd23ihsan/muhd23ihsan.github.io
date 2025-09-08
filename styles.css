@@ -111,3 +111,26 @@ header {
   border-radius: 20px;
   box-shadow: 0px 0px 25px #00f2fe;
 }
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  animation: float 4s ease-in-out infinite; /* Animasi mengambang */
+}
+
+/* Animasi naik-turun */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
