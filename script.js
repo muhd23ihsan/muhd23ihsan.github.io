@@ -1,4 +1,3 @@
-// Typing effect
 const texts = ["Graphic Designer", "Photographer", "Creative Thinker"];
 let count = 0;
 let index = 0;
@@ -12,13 +11,12 @@ let letter = "";
   currentText = texts[count];
   letter = currentText.slice(0, ++index);
 
-  document.querySelector(".typing").textContent = letter;
-
+  document.getElementById("typing").textContent = letter;
   if (letter.length === currentText.length) {
     count++;
     index = 0;
-    setTimeout(type, 1500); // pause before typing next
+    setTimeout(type, 1500);
   } else {
-    setTimeout(type, 120);
+    setTimeout(type, 100);
   }
 })();
