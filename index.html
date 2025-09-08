@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Farah Mubbina</title>
+  <title>Portfolio - Farah Mubbina</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <nav>
-      <h2 class="logo">Portfolio.</h2>
+    <nav class="navbar">
+      <div class="logo">Portfolio.</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="hero-text">
       <h3>Hello, It's Me</h3>
       <h1>Farah Mubbina</h1>
-      <h2>And I'm a <span id="typing"></span></h2>
-      <p>Graphic Designer dengan pengalaman dalam desain grafis dan fotografi. Mahir menggunakan Photoshop, Illustrator, dan Canva.</p>
-      <a href="#" class="btn">Download CV</a>
-      <div class="socials">
-        <a href="#"><i class="fab fa-facebook"></i></a>
+      <h2>And I'm a <span class="typing"></span></h2>
+      <p>
+        Graphic Designer dengan pengalaman dalam desain grafis dan fotografi. 
+        Mahir menggunakan Photoshop, Illustrator, dan Canva.
+      </p>
+      <a href="cv.pdf" class="btn">Download CV</a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-    <div class="image-container">
-      <img src="images/profile.jpg" alt="Profile" class="profile-img" />
+
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Profile" class="profile-img">
     </div>
   </section>
 
   <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/6dcf567ef8.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
