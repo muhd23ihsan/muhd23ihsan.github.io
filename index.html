@@ -1,97 +1,54 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="profile.jpg" alt="Profile" class="profile-img">
-        <h1>Farah Mubbina</h1>
-        <p class="role">Desainer Grafis Tuli</p>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h3>Hello, It's Me</h3>
+      <h1>Farah Mubbina</h1>
+      <h2>And I'm a <span class="typing"></span></h2>
+      <p>
+        Graphic Designer dengan pengalaman dalam desain grafis dan fotografi. 
+        Mahir menggunakan Photoshop, Illustrator, dan Canva.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <section class="contact">
-        <h2>Kontak</h2>
-        <ul>
-          <li>Email: iamfarahmubbina@gmail.com</li>
-          <li>Telepon: (+62) 878-8855-6889</li>
-          <li>Lokasi: Cipete, Jakarta Selatan</li>
-          <li>LinkedIn: Farah Mubbina</li>
-        </ul>
-      </section>
-      <section class="education">
-        <h2>Pendidikan</h2>
-        <p><strong>Institut Kesenian Jakarta</strong><br> Desain Komunikasi Visual (2018–2022)<br>IPK: 3.63</p>
-        <p><strong>SMK Negeri 6 Jakarta</strong><br> Animasi (2014–2017)</p>
-      </section>
-      <section class="skills">
-        <h2>Kemampuan</h2>
-        <ul>
-          <li>Fotografi</li>
-          <li>Desain Grafis</li>
-          <li>Berpikir Kreatif</li>
-          <li>Bekerja sama dengan tim</li>
-          <li>Komunikasi Tertulis</li>
-        </ul>
-      </section>
-      <section class="languages">
-        <h2>Bahasa</h2>
-        <ul>
-          <li>Inggris</li>
-          <li>Indonesia</li>
-          <li>Bahasa Isyarat</li>
-        </ul>
-      </section>
-    </aside>
+      <a href="CV_Farah_Mubbina.pdf" class="btn">Download CV</a>
+    </div>
 
-    <main class="main-content">
-      <section class="about">
-        <h2>Tentang Saya</h2>
-        <p>Graphic Designer dengan 2 tahun 7 bulan pengalaman dalam desain grafis dan fotografi. 
-        Mahir menggunakan Photoshop, Illustrator, dan Canva. Lulusan Institut Kesenian Jakarta dengan IPK 3.63.
-        <strong>Meskipun saya seorang Tuli</strong>, saya memiliki semangat besar untuk berkarya dan mencari tantangan baru yang inovatif.</p>
-      </section>
+    <div class="hero-image">
+      <div class="img-box">
+        <img src="images/profile.png" alt="Profile">
+      </div>
+    </div>
+  </section>
 
-      <section class="experience">
-        <h2>Pengalaman Kerja</h2>
-        <div class="job">
-          <h3>PT Merdeka Copper Gold Tbk <span>(Juni 2023 – Juli 2025)</span></h3>
-          <p><em>Desain Grafis (Kontrak)</em></p>
-          <ul>
-            <li>Membuat desain poster sesuai permintaan klien</li>
-            <li>Membuat desain publikasi untuk email</li>
-            <li>Membuat desain poster kampanye mingguan</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h3>Silang Indonesia <span>(Sep 2021 – Des 2021)</span></h3>
-          <p><em>Desain Grafis (Magang)</em></p>
-          <ul>
-            <li>Membuat desain media sosial Instagram (Feed, Carousel, Story)</li>
-            <li>Membantu penyuntingan video Budaya Tuli</li>
-            <li>Membantu proses pengeditan foto sesuai permintaan</li>
-            <li>Belajar bahasa isyarat sehari-hari (BISINDO)</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h3>The Royale and Co <span>(Jan 2016 – Maret 2016)</span></h3>
-          <p><em>Asisten Direktur Seni (Magang)</em></p>
-          <ul>
-            <li>Membantu perekrutan seniman untuk karya seni</li>
-            <li>Mengelola anggaran dan memantau pengeluaran</li>
-            <li>Memastikan pengiriman aset tepat waktu</li>
-            <li>Melakukan survei lokasi dan melapor ke Art Director</li>
-            <li>Bertugas sebagai Asisten Art Director di produksi video</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </div>
+  <script src="script.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </body>
 </html>
