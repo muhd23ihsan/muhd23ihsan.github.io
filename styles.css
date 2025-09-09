@@ -66,7 +66,6 @@
   100% { transform: translateY(0px); }
 }
 
-/* === Navbar Styling === */
 nav {
   width: 100%;
   position: fixed;
@@ -76,7 +75,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 50px;
+  padding: 12px 50px; /* Padding kiri dan kanan untuk seluruh navbar */
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
@@ -88,15 +87,32 @@ nav .logo {
   color: #00f7ff;
   letter-spacing: 1px;
   text-decoration: none;
+  /* Menambahkan sedikit margin kanan agar tidak terlalu dekat dengan menu */
+  margin-right: 20px; 
 }
 
 /* Menu */
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 30px; /* Jarak antar item menu */
   list-style: none;
   margin: 0;
   padding: 0;
+  /* KUNCI PERBAIKAN: 
+     Jika menu terpotong di kanan, bisa jadi karena ada elemen lain 
+     yang mendorongnya atau lebar navigasi tidak cukup.
+     Menghapus 'justify-content: space-between;' dari 'nav' dan 
+     memastikan 'nav ul' tidak memiliki lebar tetap yang terbatas 
+     akan membantu.
+     Jika Anda ingin menu rata kanan, Anda bisa menggunakan 'justify-content: flex-end;'
+     pada 'nav ul' jika 'nav' tetap 'justify-content: space-between;'.
+     Atau, jika 'nav' sudah punya 'justify-content: space-between;', 
+     maka cukup memastikan 'nav ul' bisa 'mengembang'.
+  */
+  /* Coba tambahkan ini jika elemen logo dan menu tidak terpisah sempurna */
+  /* flex-grow: 1; */ 
+  /* atau */
+  /* justify-content: flex-end; */ /* Jika Anda ingin menu selalu rata kanan */
 }
 
 nav ul li a {
@@ -128,3 +144,31 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* === Tambahan untuk memastikan responsivitas === */
+/* Anda mungkin perlu menambahkan ini jika masalah terjadi di layar kecil */
+@media (max-width: 768px) { /* Sesuaikan nilai 768px jika perlu */
+  nav {
+    padding: 12px 20px; /* Kurangi padding di layar kecil */
+  }
+
+  nav .logo {
+    font-size: 18px; /* Kecilkan ukuran font logo */
+  }
+
+  nav ul {
+    gap: 15px; /* Kurangi jarak antar menu di layar kecil */
+    /* Jika menu masih terpotong, mungkin perlu diubah menjadi vertikal */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* top: 60px; */
+    /* right: 20px; */
+    /* background: rgba(10, 25, 47, 0.95); */
+    /* width: 150px; */
+    /* padding: 10px; */
+    /* align-items: flex-end; */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Kecilkan ukuran font menu */
+  }
+}
