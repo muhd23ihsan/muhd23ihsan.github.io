@@ -145,7 +145,7 @@ nav ul li a:hover::after {
   }
 
   nav ul {
-    gap: 15px; /* Kurangi jarak antar menu di layar kecil */
+    gap: 30px; /* Kurangi jarak antar menu di layar kecil */
     /* Jika menu masih terpotong, mungkin perlu diubah menjadi vertikal */
     /* flex-direction: column; */
     /* position: absolute; */
