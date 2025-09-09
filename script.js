@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const text = ["Graphic Designer", "Photographer", "Creative Thinker"];
+  const text = ["Data Analyst"];
   let index = 0;
   let charIndex = 0;
   let currentText = "";
