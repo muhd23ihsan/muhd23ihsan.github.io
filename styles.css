@@ -74,7 +74,7 @@ nav {
   left: 0;
   background: rgba(10, 25, 47, 0.95); /* biru navy transparan */
   display: flex;
-  justify-content: center;
+  justify-content: space between;
   align-items: center;
   padding: 12px 50px; /* Padding kiri dan kanan untuk seluruh navbar */
   z-index: 1000;
@@ -89,7 +89,6 @@ nav .logo {
   letter-spacing: 1px;
   text-decoration: none;
   /* Menambahkan sedikit margin kanan agar tidak terlalu dekat dengan menu */
-  margin-right: auto; 
 }
 
 /* Menu */
@@ -99,6 +98,8 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav ul li a {
