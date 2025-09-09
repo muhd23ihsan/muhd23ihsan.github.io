@@ -74,7 +74,7 @@ nav {
   left: 0;
   background: rgba(10, 25, 47, 0.95); /* biru navy transparan */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-height: 60px;
   padding: 12px 30px; /* Padding kiri dan kanan untuk seluruh navbar */
@@ -146,18 +146,10 @@ nav ul li a:hover::after {
 
   nav ul {
     gap: 0px; /* Kurangi jarak antar menu di layar kecil */
-    /* Jika menu masih terpotong, mungkin perlu diubah menjadi vertikal */
-    /* flex-direction: column; */
-    /* position: absolute; */
-    /* top: 60px; */
-    /* right: 20px; */
-    /* background: rgba(10, 25, 47, 0.95); */
-    /* width: 150px; */
-    /* padding: 10px; */
-    /* align-items: flex-end; */
+
   }
 
   nav ul li a {
-    font-size: 14px; /* Kecilkan ukuran font menu */
+    font-size: 18px; /* Kecilkan ukuran font menu */
   }
 }
