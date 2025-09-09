@@ -101,7 +101,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 50px; /* <-- Tambahkan ini */
+  padding-right: 10px; /* <-- Tambahkan ini */
 }
 
 nav ul li a {
