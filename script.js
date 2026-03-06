@@ -1,36 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const text = ["Data Analyst"];
-  let index = 0;
-  let charIndex = 0;
-  let currentText = "";
-  let isDeleting = false;
-  const typingElement = document.querySelector(".typing");
+// Konfigurasi ScrollReveal
+ScrollReveal().reveal('.hero-content', { origin: 'left', distance: '100px', duration: 1500, delay: 200 });
+ScrollReveal().reveal('.hero-visual', { origin: 'right', distance: '100px', duration: 1500, delay: 400 });
+ScrollReveal().reveal('.skill-card', { interval: 200, origin: 'bottom', distance: '50px' });
 
-  function type() {
-    if (index >= text.length) {
-      index = 0;
-    }
-    currentText = text[index];
-
-    if (isDeleting) {
-      typingElement.textContent = currentText.substring(0, charIndex--);
-      if (charIndex < 0) {
-        isDeleting = false;
-        index++;
-        setTimeout(type, 500);
-      } else {
-        setTimeout(type, 80);
-      }
-    } else {
-      typingElement.textContent = currentText.substring(0, charIndex++);
-      if (charIndex > currentText.length) {
-        isDeleting = true;
-        setTimeout(type, 1200);
-      } else {
-        setTimeout(type, 120);
-      }
-    }
-  }
-
-  type();
+// Smooth Scrolling untuk navigasi
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
