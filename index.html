@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Muhammad Ihsan</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ihsan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-  <nav>
-    <a href="#home" class="logo">Portfolio.</a>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
+    <nav class="navbar">
+        <div class="logo">IHSAN<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h3>Hello, It's Me <span class="wave-icon">👋</span></h3>
-      <h1>Muhammad Ihsan</h1>
-      <h2>And I'm a <span class="typing"></span></h2>
-      <p>
-        data analyst with more than 5 years of experience.
-      </p>
-      <a href="cv.pdf" class="btn">Download CV</a>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Data Analyst Professional</span>
+            <h1>Turning Data into <br><span class="highlight">Actionable Insights</span></h1>
+            <p>Halo, saya Muhammad Ihsan. Berbekal pengalaman lebih dari 5 tahun, saya membantu organisasi menavigasi kompleksitas data melalui visualisasi yang cerdas dan solusi berbasis AI.</p>
+            <div class="btn-group">
+                <a href="#" class="btn primary">Lihat Portfolio</a>
+                <a href="#contact" class="btn secondary">Kontak Saya</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="data-circle">
+                <img src="monkey-icon.png" alt="Ihsan Avatar"> </div>
+        </div>
+    </section>
 
-    <div class="hero-img">
-      <img src="images/profile.png" alt="Profile" class="profile-img">
-    </div>
-  </section>
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Saya adalah seorang analis data yang memiliki latar belakang pendidikan kuat di <strong>Fisika Teknik (Master dari ITB)</strong>. Kombinasi antara pemikiran teknis yang presisi dan keahlian analitik memungkinkan saya untuk membangun sistem pemantauan yang terpusat dan efisien[cite: 41].</p>
+                <p>Saat ini di <strong>GovTech Procurement - Telkom Indonesia</strong>, saya berfokus pada pengembangan dashboard Monev dan sistem AI untuk mengoptimalkan operasional layanan publik[cite: 39, 41, 42].</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <section id="skills" class="section bg-alt">
+        <h2 class="section-title">Technical Mastery</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Languages & Databases</h3>
+                <p>Python, SQL, BigQuery, Crawling [cite: 7, 11, 12, 13]</p>
+            </div>
+            <div class="skill-card">
+                <h3>Visualization</h3>
+                <p>Metabase, Looker, Power BI, Tableau, Redash [cite: 9, 10, 14, 15, 16]</p>
+            </div>
+            <div class="skill-card">
+                <h3>Advanced Tech</h3>
+                <p>AI Categorization, Recommendation Engine, Machine Learning [cite: 8, 24, 42, 47]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Mari berkolaborasi untuk proyek Anda berikutnya.</p>
+        <p><strong>muhd23ihsan@gmail.com</strong> | Padalarang, West Java [cite: 29]</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
